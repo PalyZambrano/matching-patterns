@@ -14,35 +14,12 @@
 	} = $props();
 </script>
 
-<button {type} {onclick} class={variant}>
+<button
+	{type}
+	{onclick}
+	class="font-sans text-[0.9rem] font-semibold px-[1.4rem] py-[0.55rem] rounded-[3px] cursor-pointer whitespace-nowrap transition-opacity duration-150 hover:opacity-[0.88] {variant === 'filled'
+		? 'bg-brand text-white border-none'
+		: 'bg-transparent text-brand border-[1.5px] border-brand'}"
+>
 	{@render children?.()}
 </button>
-
-<style>
-	button {
-		font-family: system-ui, sans-serif;
-		font-size: 0.9rem;
-		font-weight: 600;
-		padding: 0.55rem 1.4rem;
-		border-radius: 3px;
-		cursor: pointer;
-		border: none;
-		white-space: nowrap;
-		transition: opacity 0.15s;
-	}
-
-	button:hover {
-		opacity: 0.88;
-	}
-
-	.filled {
-		background-color: #c1001c;
-		color: white;
-	}
-
-	.outlined {
-		background-color: transparent;
-		color: #c1001c;
-		border: 1.5px solid #c1001c;
-	}
-</style>

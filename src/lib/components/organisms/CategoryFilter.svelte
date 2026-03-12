@@ -17,7 +17,7 @@
 	];
 </script>
 
-<div class="filter" role="group" aria-label="Categoría de tienda">
+<div class="flex justify-center gap-3 flex-wrap" role="group" aria-label="Categoría de tienda">
 	{#each categories as cat}
 		<CategoryTab
 			id={cat.id}
@@ -27,12 +27,3 @@
 		/>
 	{/each}
 </div>
-
-<style>
-	.filter {
-		display: flex;
-		justify-content: center;
-		gap: 0.75rem;
-		flex-wrap: wrap;
-	}
-</style>

@@ -1,64 +1,11 @@
 <script lang="ts"></script>
 
-<header>
-	<a href="/" class="logo" aria-label="Matching Patterns">
-		<span>M</span>
+<header class="bg-neutral-50 shadow  flex items-center justify-between px-10 py-2.5 sticky top-0 z-50">
+	<a href="/" class="flex items-center justify-center w-[2.1rem] h-[2.1rem]  text-white font-serif font-bold text-[1.15rem] no-underline shrink-0" aria-label="Matching Patterns">
+		<span><img class="p-1" src="/svg/logo.svg" alt=""></span>
 	</a>
-	<nav aria-label="Main navigation">
-		<a href="/explorar">Explorar</a>
-		<a href="/contribuir" class="contribuir">Contribuir</a>
+	<nav class="flex items-center gap-10" aria-label="Main navigation">
+		<a href="/stores" class="text-neutral-800  no-underline text-[0.9rem] hover:text-brand">Explorar</a>
+		<a href="/contribuir" class="text-brand border-[1.5px] border-brand px-[1.1rem] py-[0.3rem] rounded-lg text-[0.9rem] no-underline">Contribuir</a>
 	</nav>
 </header>
-
-<style>
-	header {
-		background-color: #f0ebe5;
-		border-bottom: 1px solid #ddd7cf;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0.6rem 2.5rem;
-		position: sticky;
-		top: 0;
-		z-index: 50;
-	}
-
-	.logo {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 2.1rem;
-		height: 2.1rem;
-		background-color: #c1001c;
-		color: #fff;
-		font-family: Georgia, 'Times New Roman', serif;
-		font-weight: 700;
-		font-size: 1.15rem;
-		text-decoration: none;
-		flex-shrink: 0;
-	}
-
-	nav {
-		display: flex;
-		align-items: center;
-		gap: 2.5rem;
-	}
-
-	nav a {
-		color: #111;
-		text-decoration: none;
-		font-family: system-ui, sans-serif;
-		font-size: 0.9rem;
-	}
-
-	nav a:hover {
-		color: #c1001c;
-	}
-
-	.contribuir {
-		border: 1.5px solid #c1001c;
-		color: #c1001c !important;
-		padding: 0.3rem 1.1rem;
-		border-radius: 8px;
-	}
-</style>

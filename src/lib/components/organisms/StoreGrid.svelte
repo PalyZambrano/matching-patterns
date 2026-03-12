@@ -5,27 +5,11 @@
 	let { stores }: { stores: Store[] } = $props();
 </script>
 
-<div class="grid">
+<div class="grid grid-cols-4 gap-6">
 	{#each stores as store (store.id)}
 		<StoreCard {store} />
 	{/each}
 	{#if stores.length === 0}
-		<p class="empty">No se encontraron tiendas.</p>
+		<p class="col-span-full text-center text-[#666] font-sans py-8">No se encontraron tiendas.</p>
 	{/if}
 </div>
-
-<style>
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1.5rem;
-	}
-
-	.empty {
-		grid-column: 1 / -1;
-		text-align: center;
-		color: #666;
-		font-family: system-ui, sans-serif;
-		padding: 2rem 0;
-	}
-</style>

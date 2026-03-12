@@ -48,26 +48,23 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap"
-		rel="stylesheet"
-	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
 	<title>Explorar Tiendas — Matching Patterns</title>
 </svelte:head>
 
 <Header />
 
-<main>
-	<h1>Explorar Tiendas</h1>
+<main class="bg-neutral-50 min-h-[calc(100vh-56px)] px-16 pt-12 pb-16 flex flex-col gap-8">
+	<h1 class="font-barlow font-black text-[clamp(2.5rem,5vw,4rem)] text-brand text-center m-0 uppercase tracking-[-0.01em]">Explorar Tiendas</h1>
 
-	<section class="controls">
+	<section class="flex flex-col gap-4 max-w-[860px] mx-auto w-full">
 		<CategoryFilter active={activeCategory} onchange={setCategory} />
 		<SearchBar onsearch={handleSearch} />
 	</section>
 
-	<section class="results">
+	<section class="flex-1">
 		<StoreGrid stores={paginated} />
 	</section>
 
@@ -78,38 +75,3 @@
 		onnext={() => (currentPage += 1)}
 	/>
 </main>
-
-<style>
-	main {
-		background-color: #f0ebe5;
-		min-height: calc(100vh - 56px);
-		padding: 3rem 4rem 4rem;
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
-	h1 {
-		font-family: 'Barlow Condensed', Impact, 'Arial Narrow', sans-serif;
-		font-weight: 900;
-		font-size: clamp(2.5rem, 5vw, 4rem);
-		color: #c1001c;
-		text-align: center;
-		margin: 0;
-		text-transform: uppercase;
-		letter-spacing: -0.01em;
-	}
-
-	.controls {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		max-width: 860px;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	.results {
-		flex: 1;
-	}
-</style>

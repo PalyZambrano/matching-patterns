@@ -12,55 +12,24 @@
 	} = $props();
 </script>
 
-<nav class="pagination" aria-label="Paginación">
-	<div class="pill">
-		<button onclick={onprev} disabled={current <= 1} aria-label="Página anterior">
+<nav class="flex justify-center" aria-label="Paginación">
+	<div class="inline-flex items-center gap-[0.6rem] border-[1.5px] border-brand rounded-full px-4 py-[0.35rem]">
+		<button
+			onclick={onprev}
+			disabled={current <= 1}
+			aria-label="Página anterior"
+			class="bg-transparent border-none cursor-pointer text-brand text-[1.4rem] leading-none px-[0.1rem] flex items-center disabled:opacity-30 disabled:cursor-default"
+		>
 			&#8249;
 		</button>
-		<span class="indicator">{current}/{total}</span>
-		<button onclick={onnext} disabled={current >= total} aria-label="Página siguiente">
+		<span class="font-sans text-[0.9rem] text-[#333] min-w-10 text-center">{current}/{total}</span>
+		<button
+			onclick={onnext}
+			disabled={current >= total}
+			aria-label="Página siguiente"
+			class="bg-transparent border-none cursor-pointer text-brand text-[1.4rem] leading-none px-[0.1rem] flex items-center disabled:opacity-30 disabled:cursor-default"
+		>
 			&#8250;
 		</button>
 	</div>
 </nav>
-
-<style>
-	.pagination {
-		display: flex;
-		justify-content: center;
-	}
-
-	.pill {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.6rem;
-		border: 1.5px solid #c1001c;
-		border-radius: 999px;
-		padding: 0.35rem 1rem;
-	}
-
-	button {
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: #c1001c;
-		font-size: 1.4rem;
-		line-height: 1;
-		padding: 0 0.1rem;
-		display: flex;
-		align-items: center;
-	}
-
-	button:disabled {
-		opacity: 0.3;
-		cursor: default;
-	}
-
-	.indicator {
-		font-family: system-ui, sans-serif;
-		font-size: 0.9rem;
-		color: #333;
-		min-width: 2.5rem;
-		text-align: center;
-	}
-</style>

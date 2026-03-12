@@ -17,21 +17,9 @@
 	}
 </script>
 
-<form class="searchbar" onsubmit={(e) => { e.preventDefault(); handleSearch(); }}>
-	<div class="field"><TextInput placeholder="País" bind:value={pais} /></div>
-	<div class="field"><TextInput placeholder="Provincia / Región" bind:value={provincia} /></div>
-	<div class="field"><TextInput placeholder="Ciudad / Localidad" bind:value={ciudad} /></div>
+<form class="flex gap-[0.6rem] items-center" onsubmit={(e) => { e.preventDefault(); handleSearch(); }}>
+	<div class="flex-1"><TextInput placeholder="País" bind:value={pais} /></div>
+	<div class="flex-1"><TextInput placeholder="Provincia / Región" bind:value={provincia} /></div>
+	<div class="flex-1"><TextInput placeholder="Ciudad / Localidad" bind:value={ciudad} /></div>
 	<Button type="submit">Buscar tiendas</Button>
 </form>
-
-<style>
-	.searchbar {
-		display: flex;
-		gap: 0.6rem;
-		align-items: center;
-	}
-
-	.field {
-		flex: 1;
-	}
-</style>

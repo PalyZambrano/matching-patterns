@@ -1,3 +1,13 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--color-brand: #c1001c;
+	--color-cream: #f0ebe5;
+	--color-cream-border: #ddd7cf;
+}
+
+ @utility font-vina {
+  font-family: 'Vina Sans', sans-serif;
+}
