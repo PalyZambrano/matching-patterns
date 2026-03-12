@@ -6,8 +6,6 @@
 	</a>
 	<nav aria-label="Main navigation">
 		<a href="/explorar">Explorar</a>
-		<a href="/recursos">Recursos</a>
-		<a href="/guias">Guías</a>
 		<a href="/contribuir" class="contribuir">Contribuir</a>
 	</nav>
 </header>
@@ -61,6 +59,6 @@
 		border: 1.5px solid #c1001c;
 		color: #c1001c !important;
 		padding: 0.3rem 1.1rem;
-		border-radius: 2px;
+		border-radius: 8px;
 	}
 </style>
