@@ -5,7 +5,7 @@
 	let { stores }: { stores: Store[] } = $props();
 </script>
 
-<div class="grid grid-cols-4 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
 	{#each stores as store (store.id)}
 		<StoreCard {store} />
 	{/each}

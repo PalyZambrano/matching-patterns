@@ -10,11 +10,11 @@
 	/>
 </svelte:head>
 
-<section class="bg-neutral-50  flex items-stretch min-h-[calc(100vh-56px)] overflow-hidden relative">
+<section class="bg-neutral-50 flex items-stretch min-h-[calc(100vh-56px)] overflow-hidden relative">
 	<div class="shrink-0 grow-0 basis-[52%] pt-12 pb-12 pl-10 flex flex-col">
-		<h1 class="font-vina text-[clamp(4.5rem,11vw,11rem)] leading-[0.88] text-brand mt-0 mb-6 tracking-[-0.02em]">Matching<br />Patterns</h1>
-		<p class="font-sans text-base text-neutral-800   m-0 max-w-[480px] leading-relaxed">Una biblioteca abierta de recursos para diseñadores de indumentaria.</p>
-		<a href="/stores" class="inline-block no-underline mt-auto pt-8">
+		<h1 class="uppercase font-extrabold font-stretch-condensed text-[clamp(4.5rem,11vw,11rem)] leading-[0.88] text-brand mt-0 mb-2 tracking-[-0.02em]">Matching<br />Patterns</h1>
+		<p class="font-sans font-light  text-xl  text-brand/80  m-0 md:max-w-[680px]">Una biblioteca abierta de recursos para diseñadores de indumentaria.</p>
+		<a href="/stores" class="inline-block no-underline  pt-8">
 			<svg class="hover:transform-flat  " width="389" height="128" viewBox="0 0 389 128" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M0 26.1307V127.195H388.398C388.545 118.485 387.781 98.5282 383.549 88.3833C378.258 75.7022 361.506 64.9425 344.753 56.8727C328 48.803 309.925 45.7288 285.678 35.7376C266.28 27.7447 263.488 8.58215 264.516 0L0 26.1307Z" fill="#B0000F"/>
 			<text
@@ -23,10 +23,10 @@
 								text-anchor="middle"
 								fill="white"
 								font-family="system-ui, sans-serif"
-								font-size="17"
-								letter-spacing="6"
+								font-size="18"
+							
 							>
-								←----- Explorar -----→
+								←---------- EXPLORAR ----------→
 							</text>
 			</svg>
 		</a>
