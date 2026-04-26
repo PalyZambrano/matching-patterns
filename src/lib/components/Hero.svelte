@@ -13,11 +13,11 @@
 <section class="relative flex min-h-[calc(100vh-56px)] items-stretch overflow-hidden bg-neutral-50">
 	<div class="flex shrink-0 grow-0 basis-[52%] flex-col pt-12 pb-12 pl-10">
 		<h1
-			class="mt-0 mb-2 font-vina text-[clamp(4.5rem,11vw,11rem)] leading-[0.88] font-extrabold tracking-[-0.02em] text-brand uppercase font-stretch-condensed"
+			class="mt-0 mb-2 font-vina text-[clamp(4.5rem,11vw,11rem)] leading-[0.88] font-extrabold tracking-[-0.02em] text-brand"
 		>
 			Matching<br />Patterns
 		</h1>
-		<p class="m-0 font-sans text-xl font-light text-brand/80 md:max-w-[680px]">
+		<p class="font-mona m-0 text-xl font-light text-brand/80 md:max-w-[680px]">
 			Una biblioteca abierta de recursos para diseñadores de indumentaria.
 		</p>
 		<a href="/stores" class="inline-block pt-8 no-underline">

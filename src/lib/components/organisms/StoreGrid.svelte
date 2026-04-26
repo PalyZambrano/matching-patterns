@@ -5,11 +5,11 @@
 	let { stores }: { stores: Store[] } = $props();
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-4">
 	{#each stores as store (store.id)}
 		<StoreCard {store} />
 	{/each}
 	{#if stores.length === 0}
-		<p class="col-span-full text-center text-[#666] font-sans py-8">No se encontraron tiendas.</p>
+		<p class="col-span-full py-8 text-center font-sans text-[#666]">No se encontraron tiendas.</p>
 	{/if}
 </div>

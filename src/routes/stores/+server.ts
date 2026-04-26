@@ -13,7 +13,7 @@ const stores: Store[] = [
 		tags: ['Tapicería', 'venta por mayor'],
 		studentDiscount: true,
 		category: 'telas',
-		img:'/test-image.png'
+		img: '/test-image.png'
 	},
 	{
 		id: 2,
@@ -25,7 +25,7 @@ const stores: Store[] = [
 		tags: ['lino', 'seda'],
 		studentDiscount: false,
 		category: 'telas',
-		img:'/test-image.png'
+		img: '/test-image.png'
 	},
 	{
 		id: 3,

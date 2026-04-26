@@ -17,9 +17,10 @@
 <button
 	{type}
 	{onclick}
-	class="font-sans text-[0.9rem] font-semibold px-[1.4rem] py-[0.55rem] rounded-[3px] cursor-pointer whitespace-nowrap transition-opacity duration-150 hover:opacity-[0.88] {variant === 'filled'
-		? 'bg-brand text-white border-none'
-		: 'bg-transparent text-brand border-[1.5px] border-brand'}"
+	class="cursor-pointer rounded-[3px] px-[1.4rem] py-[0.55rem] font-sans text-[0.9rem] font-semibold whitespace-nowrap transition-opacity duration-150 hover:opacity-[0.88] {variant ===
+	'filled'
+		? 'border-none bg-brand text-white'
+		: 'border-[1.5px] border-brand bg-transparent text-brand'}"
 >
 	{@render children?.()}
 </button>

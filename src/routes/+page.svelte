@@ -6,4 +6,4 @@
 
 <Header />
 <Hero />
-<Footer/>
+<Footer />

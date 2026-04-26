@@ -8,20 +8,27 @@
 	const fullAddress = `${store.address}, ${store.city}, ${store.province} - ${store.country}`;
 </script>
 
-<article class="border-[1.5px] border-brand/10 rounded-[4px] overflow-visible bg-neutral-50 flex flex-col relative ">
+<article
+	class="relative flex flex-col overflow-visible rounded-[4px] border-[1.5px] border-brand/10 bg-neutral-50"
+>
 	<div class="relative">
-		<figure class="mask-no-repeat w-full aspect-4/3 mask-[url(/image-store.png)] bg-cover bg-no-repeat bg-center" style="background-image: url({store.img})" aria-label="Foto de la tienda">
-		</figure>
+		<figure
+			class="aspect-4/3 w-full mask-[url(/image-store.png)] bg-cover bg-center bg-no-repeat mask-no-repeat"
+			style="background-image: url({store.img})"
+			aria-label="Foto de la tienda"
+		></figure>
 		{#if store.studentDiscount}
-			<div class="absolute -top-6 right-2  z-[1]">
+			<div class="absolute -top-6 right-2 z-[1]">
 				<Badge />
 			</div>
 		{/if}
 	</div>
-	<div class="pt-3 px-[0.85rem] pb-[0.85rem] flex flex-col gap-[0.35rem]">
-		<h2 class="font-barlow font-black text-base text-brand m-0 leading-tight uppercase">{store.name}</h2>
-		<p class="text-[0.85rem] text-[#222] m-0 leading-[1.45]">{fullAddress}</p>
-		<div class="flex flex-wrap gap-[0.4rem] mt-[0.2rem]">
+	<div class="flex flex-col gap-[0.35rem] px-[0.85rem] pt-3 pb-[0.85rem]">
+		<h2 class="m-0 font-barlow text-base leading-tight font-black text-brand uppercase">
+			{store.name}
+		</h2>
+		<p class="m-0 text-[0.85rem] leading-[1.45] text-[#222]">{fullAddress}</p>
+		<div class="mt-[0.2rem] flex flex-wrap gap-[0.4rem]">
 			{#each store.tags as tag}
 				<Tag label={tag} />
 			{/each}

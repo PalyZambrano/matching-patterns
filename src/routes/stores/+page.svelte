@@ -30,9 +30,7 @@
 
 	let totalPages = $derived(Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)));
 
-	let paginated = $derived(
-		filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
-	);
+	let paginated = $derived(filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE));
 
 	function setCategory(cat: Category) {
 		activeCategory = cat;
@@ -48,18 +46,22 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet" />
 	<title>Explorar Tiendas — Matching Patterns</title>
 </svelte:head>
 
 <Header />
 
-<main class="bg-neutral-50 min-h-[calc(100vh-56px)] px-16 pt-12 pb-16 flex flex-col gap-8">
-	<h1 class="font-barlow font-black text-[clamp(2.5rem,5vw,4rem)] text-brand text-center m-0 uppercase tracking-[-0.01em]">Explorar Tiendas</h1>
+<main class="flex min-h-[calc(100vh-56px)] flex-col gap-8 bg-neutral-50 px-16 pt-12 pb-16">
+	<h1
+		class="m-0 text-center font-barlow text-[clamp(2.5rem,5vw,4rem)] font-black tracking-[-0.01em] text-brand uppercase"
+	>
+		Explorar Tiendas
+	</h1>
 
-	<section class="flex flex-col gap-4 max-w-[860px] mx-auto w-full">
+	<section class="mx-auto flex w-full max-w-[860px] flex-col gap-4">
 		<CategoryFilter active={activeCategory} onchange={setCategory} />
 		<SearchBar onsearch={handleSearch} />
 	</section>

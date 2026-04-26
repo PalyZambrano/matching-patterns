@@ -17,7 +17,13 @@
 	}
 </script>
 
-<form class="flex gap-[0.6rem] items-center" onsubmit={(e) => { e.preventDefault(); handleSearch(); }}>
+<form
+	class="flex items-center gap-[0.6rem]"
+	onsubmit={(e) => {
+		e.preventDefault();
+		handleSearch();
+	}}
+>
 	<div class="flex-1"><TextInput placeholder="País" bind:value={pais} /></div>
 	<div class="flex-1"><TextInput placeholder="Provincia / Región" bind:value={provincia} /></div>
 	<div class="flex-1"><TextInput placeholder="Ciudad / Localidad" bind:value={ciudad} /></div>

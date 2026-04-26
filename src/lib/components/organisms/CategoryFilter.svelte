@@ -17,7 +17,7 @@
 	];
 </script>
 
-<div class="flex justify-center gap-3 flex-wrap" role="group" aria-label="Categoría de tienda">
+<div class="flex flex-wrap justify-center gap-3" role="group" aria-label="Categoría de tienda">
 	{#each categories as cat}
 		<CategoryTab
 			id={cat.id}
