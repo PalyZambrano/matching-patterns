@@ -1,13 +1,17 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
+
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Vina Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/vina-sans-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 @theme {
 	--color-brand: #c1001c;
 	--color-cream: #fffff7;
 	--color-cream-border: #ddd7cf;
-}
-
- @utility font-vina {
-  font-family: 'Vina Sans', sans-serif;
+	--font-barlow: 'Barlow', sans-serif;
+	--font-vina: 'Vina Sans', sans-serif;
 }

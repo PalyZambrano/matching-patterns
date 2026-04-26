@@ -10,7 +10,7 @@
 
 <article class="border-[1.5px] border-brand/10 rounded-[4px] overflow-visible bg-neutral-50 flex flex-col relative ">
 	<div class="relative">
-		<figure class="mask-no-repeat w-full aspect-4/3 mask-[url(/image-store.png)] bg-[url(/test-image.png)] bg-cover   bg-no-repeat bg-center " aria-label="Foto de la tienda">
+		<figure class="mask-no-repeat w-full aspect-4/3 mask-[url(/image-store.png)] bg-cover bg-no-repeat bg-center" style="background-image: url({store.img})" aria-label="Foto de la tienda">
 		</figure>
 		{#if store.studentDiscount}
 			<div class="absolute -top-6 right-2  z-[1]">

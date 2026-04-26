@@ -12,7 +12,8 @@ const stores: Store[] = [
 		address: 'Carrer Pintor Aparicio, 29, 03003',
 		tags: ['Tapicería', 'venta por mayor'],
 		studentDiscount: true,
-		category: 'telas'
+		category: 'telas',
+		img:'/test-image.png'
 	},
 	{
 		id: 2,
@@ -23,7 +24,8 @@ const stores: Store[] = [
 		address: 'Passeig de Gràcia, 42, 08007',
 		tags: ['lino', 'seda'],
 		studentDiscount: false,
-		category: 'telas'
+		category: 'telas',
+		img:'/test-image.png'
 	},
 	{
 		id: 3,
