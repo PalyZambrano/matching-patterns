@@ -7,7 +7,7 @@
 		onclick,
 		children
 	}: {
-		variant?: 'filled' | 'outlined';
+		variant?: 'filled' | 'outlined' | 'light';
 		type?: 'button' | 'submit';
 		onclick?: () => void;
 		children?: Snippet;
@@ -17,10 +17,12 @@
 <button
 	{type}
 	{onclick}
-	class="cursor-pointer rounded-[3px] px-[1.4rem] py-[0.55rem] font-sans text-[0.9rem] font-semibold whitespace-nowrap transition-opacity duration-150 hover:opacity-[0.88] {variant ===
+	class="min-h-11 cursor-pointer rounded-full px-6 py-2.5 font-sans text-sm font-bold whitespace-nowrap transition-opacity duration-150 hover:opacity-[0.88] {variant ===
 	'filled'
-		? 'border-none bg-brand text-white'
-		: 'border-[1.5px] border-brand bg-transparent text-brand'}"
+		? 'border-none bg-brand-soft text-white'
+		: variant === 'light'
+			? 'border border-white bg-white text-brand'
+			: 'border-[1.5px] border-brand bg-transparent text-brand'}"
 >
 	{@render children?.()}
 </button>

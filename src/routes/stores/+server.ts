@@ -13,7 +13,15 @@ const stores: Store[] = [
 		tags: ['Tapicería', 'venta por mayor'],
 		studentDiscount: true,
 		category: 'telas',
-		img: '/test-image.png'
+		img: '/test-image.png',
+		website: 'https://example.com',
+		phone: '(34) 555-5555',
+		email: 'contacto@placeholder.com',
+		socials: [
+			{ label: 'Instagram', url: 'https://instagram.com' },
+			{ label: 'Pinterest', url: 'https://pinterest.com' }
+		],
+		hours: ['Lunes-Viernes : 10AM - 7PM', 'Sat : 10AM - 2PM', 'Sun : Cerrado']
 	},
 	{
 		id: 2,
@@ -25,7 +33,9 @@ const stores: Store[] = [
 		tags: ['lino', 'seda'],
 		studentDiscount: false,
 		category: 'telas',
-		img: '/test-image.png'
+		img: '/test-image.png',
+		website: 'https://example.com/textiles-modernistes',
+		socials: [{ label: 'Instagram', url: 'https://instagram.com' }]
 	},
 	{
 		id: 3,
@@ -36,7 +46,8 @@ const stores: Store[] = [
 		address: 'Calle Fuencarral, 85, 28004',
 		tags: ['algodón', 'venta por mayor'],
 		studentDiscount: true,
-		category: 'telas'
+		category: 'telas',
+		phone: '(34) 555-0112'
 	},
 	{
 		id: 4,
@@ -124,7 +135,8 @@ const stores: Store[] = [
 		address: 'Carrer de Pallars, 193, 08005',
 		tags: ['sublimación', 'DTG'],
 		studentDiscount: false,
-		category: 'estampados'
+		category: 'estampados',
+		website: 'https://example.com/printlab-barcelona'
 	}
 ];
 

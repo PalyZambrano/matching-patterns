@@ -12,5 +12,5 @@
 	type="text"
 	{placeholder}
 	bind:value
-	class="w-full rounded-[3px] border border-brand bg-white px-[0.9rem] py-[0.55rem] font-sans text-[0.9rem] text-[#111] outline-none placeholder:text-[#aaa] focus:shadow-[0_0_0_2px_#c1001c33]"
+	class="min-h-11 w-full rounded-[3px] border border-brand-soft bg-white px-4 py-2.5 font-sans text-sm text-[#111] outline-none placeholder:text-[#999] focus:shadow-[0_0_0_2px_#aec5f2]"
 />

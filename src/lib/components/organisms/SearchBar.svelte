@@ -5,27 +5,23 @@
 	let {
 		onsearch
 	}: {
-		onsearch: (filters: { pais: string; provincia: string; ciudad: string }) => void;
+		onsearch: (query: string) => void;
 	} = $props();
 
-	let pais = $state('');
-	let provincia = $state('');
-	let ciudad = $state('');
+	let query = $state('');
 
 	function handleSearch() {
-		onsearch({ pais, provincia, ciudad });
+		onsearch(query);
 	}
 </script>
 
 <form
-	class="flex items-center gap-[0.6rem]"
+	class="flex w-full max-w-[820px] flex-col gap-4 md:flex-row md:items-center md:gap-6"
 	onsubmit={(e) => {
 		e.preventDefault();
 		handleSearch();
 	}}
 >
-	<div class="flex-1"><TextInput placeholder="País" bind:value={pais} /></div>
-	<div class="flex-1"><TextInput placeholder="Provincia / Región" bind:value={provincia} /></div>
-	<div class="flex-1"><TextInput placeholder="Ciudad / Localidad" bind:value={ciudad} /></div>
+	<div class="flex-1"><TextInput placeholder="Buscar por ciudad o País" bind:value={query} /></div>
 	<Button type="submit">Buscar tiendas</Button>
 </form>

@@ -3,6 +3,6 @@
 </script>
 
 <span
-	class="inline-block rounded-full bg-brand px-[0.85rem] py-[0.2rem] text-[0.8rem] whitespace-nowrap text-white"
+	class="inline-flex min-h-7 items-center rounded-full bg-[#5278dc] px-3.5 py-1 text-[0.78rem] leading-none whitespace-nowrap text-white"
 	>{label}</span
 >

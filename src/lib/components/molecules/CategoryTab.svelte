@@ -15,15 +15,16 @@
 </script>
 
 <button
-	class="inline-flex cursor-pointer items-center gap-[0.6rem] rounded-full border-2 border-brand py-[0.45rem] pr-[1.4rem] pl-[0.45rem] transition-colors duration-150 {active
-		? 'bg-brand text-white'
-		: 'bg-white text-brand'}"
+	class="inline-flex min-h-11 cursor-pointer items-center gap-3 rounded-full border border-brand-soft py-1 pr-6 pl-3 transition-colors duration-150 {active
+		? 'bg-brand-soft text-white'
+		: 'bg-white text-black'}"
 	{onclick}
 	aria-pressed={active}
 >
 	<span
-		class="h-9 w-9 shrink-0 rounded-full {active ? 'bg-white/30' : 'bg-[#e8c0c6]'}"
+		class="h-8 w-8 shrink-0 bg-brand-soft {active ? 'bg-white/35' : 'bg-brand-soft'} [mask-image:var(--category-icon)] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain]"
+		style="--category-icon: url('/svg/{id === 'telas' ? 'tela' : id === 'merceria' ? 'alfiletero' : 'estampa'}.svg')"
 		aria-hidden="true"
 	></span>
-	<span class="font-barlow text-base font-black tracking-[0.03em]">{label}</span>
+	<span class="text-[0.95rem] font-black">{label}</span>
 </button>

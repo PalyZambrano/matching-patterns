@@ -8,6 +8,23 @@ export interface Store {
 	tags: string[];
 	studentDiscount: boolean;
 	category: 'telas' | 'merceria' | 'estampados';
+	img?: string;
+	mapUrl?: string;
+	website?: string;
+	phone?: string;
+	email?: string;
+	socials?: SocialLink[];
+	hours?: string[];
 }
 
 export type Category = 'telas' | 'merceria' | 'estampados';
+
+export interface City {
+	name: string;
+	storeCount: number;
+}
+
+export interface SocialLink {
+	label: string;
+	url: string;
+}

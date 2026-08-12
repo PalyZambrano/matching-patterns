@@ -5,16 +5,17 @@
 
 	let { store }: { store: Store } = $props();
 
-	const fullAddress = `${store.address}, ${store.city}, ${store.province} - ${store.country}`;
+	let fullAddress = $derived(`${store.address}, ${store.city}, ${store.province} - ${store.country}`);
 </script>
 
-<article
-	class="relative flex flex-col overflow-visible rounded-[4px] border-[1.5px] border-brand/10 bg-neutral-50"
+<a
+	href={`/stores/${store.id}`}
+	class="relative flex min-h-[390px] flex-col overflow-visible border border-black/6 bg-white p-3 no-underline transition-shadow hover:shadow-md"
 >
 	<div class="relative">
 		<figure
 			class="aspect-4/3 w-full mask-[url(/image-store.png)] bg-cover bg-center bg-no-repeat mask-no-repeat"
-			style="background-image: url({store.img})"
+			style="background-image: url({store.img ?? '/test-image.png'})"
 			aria-label="Foto de la tienda"
 		></figure>
 		{#if store.studentDiscount}
@@ -23,15 +24,15 @@
 			</div>
 		{/if}
 	</div>
-	<div class="flex flex-col gap-[0.35rem] px-[0.85rem] pt-3 pb-[0.85rem]">
-		<h2 class="m-0 font-barlow text-base leading-tight font-black text-brand uppercase">
+	<div class="flex flex-1 flex-col gap-1 px-2 pt-4 pb-3">
+		<h2 class="m-0 text-[1rem] leading-tight font-black text-black">
 			{store.name}
 		</h2>
-		<p class="m-0 text-[0.85rem] leading-[1.45] text-[#222]">{fullAddress}</p>
-		<div class="mt-[0.2rem] flex flex-wrap gap-[0.4rem]">
+		<p class="m-0 text-[0.86rem] leading-[1.45] text-[#222]">{fullAddress}</p>
+		<div class="mt-auto flex flex-wrap gap-2 pt-6">
 			{#each store.tags as tag}
 				<Tag label={tag} />
 			{/each}
 		</div>
 	</div>
-</article>
+</a>
