@@ -10,7 +10,7 @@
 
 	let { data }: { data: PageData } = $props();
 
-	const PAGE_SIZE = 4;
+	const PAGE_SIZE = 16;
 
 	let activeCategory = $state<Category>('telas');
 	let filterPais = $state('');
