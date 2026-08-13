@@ -22,8 +22,14 @@
 	aria-pressed={active}
 >
 	<span
-		class="h-8 w-8 shrink-0 bg-brand-soft {active ? 'bg-white/35' : 'bg-brand-soft'} [mask-image:var(--category-icon)] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain]"
-		style="--category-icon: url('/svg/{id === 'telas' ? 'tela' : id === 'merceria' ? 'alfiletero' : 'estampa'}.svg')"
+		class="h-8 w-8 shrink-0 bg-brand-soft {active
+			? 'bg-white/35'
+			: 'bg-brand-soft'} [mask-image:var(--category-icon)] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]"
+		style="--category-icon: url('/svg/{id === 'telas'
+			? 'tela'
+			: id === 'merceria'
+				? 'alfiletero'
+				: 'estampa'}.svg')"
 		aria-hidden="true"
 	></span>
 	<span class="text-[0.95rem] font-black">{label}</span>

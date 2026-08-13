@@ -2,20 +2,41 @@
 	let { variant = 'blue' }: { variant?: 'blue' | 'light' } = $props();
 </script>
 
-<header class="sticky top-0 z-50 border-b px-5 py-2.5 md:px-10 {variant === 'blue' ? 'border-white/15 bg-brand-soft' : 'border-black/5 bg-white shadow-sm'}">
+<header
+	class="sticky top-0 z-50 border-b px-5 py-2.5 md:px-10 {variant === 'blue'
+		? 'border-white/15 bg-brand-soft'
+		: 'border-black/5 bg-white shadow-sm'}"
+>
 	<div class="mx-auto flex max-w-[1440px] items-center justify-between gap-6">
 		<a
 			href="/"
-			class="flex items-center gap-2 no-underline {variant === 'blue' ? 'text-white' : 'text-brand-soft'}"
+			class="flex items-center gap-2 no-underline {variant === 'blue'
+				? 'text-white'
+				: 'text-brand-soft'}"
 			aria-label="Matching Patterns"
 		>
-			<span class="h-8 w-6 {variant === 'blue' ? 'bg-white' : 'bg-brand-soft'} [mask-image:url('/svg/logo.svg')] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain]"></span>
-			<span class="hidden font-display text-[1.7rem] leading-none sm:inline">Matching Patterns</span>
+			<span
+				class="h-8 w-6 {variant === 'blue'
+					? 'bg-white'
+					: 'bg-brand-soft'} [mask-image:url('/svg/logo.svg')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]"
+			></span>
+			<span class="hidden font-display text-[1.7rem] leading-none sm:inline">Matching Patterns</span
+			>
 		</a>
 		<nav class="flex items-center gap-4 text-xs font-bold md:gap-9" aria-label="Main navigation">
-			<a href="/stores" class="no-underline {variant === 'blue' ? 'text-white' : 'text-brand'}">Explorar</a>
-			<a href="#recursos" class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}">Recursos</a>
-			<a href="#guias" class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}">Guías</a>
+			<a href="/stores" class="no-underline {variant === 'blue' ? 'text-white' : 'text-brand'}"
+				>Explorar</a
+			>
+			<a
+				href="#recursos"
+				class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}"
+				>Recursos</a
+			>
+			<a
+				href="#guias"
+				class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}"
+				>Guías</a
+			>
 			<a href="/contribuir" class="bg-brand-soft px-5 py-2.5 text-white no-underline">Contribuir</a>
 		</nav>
 	</div>

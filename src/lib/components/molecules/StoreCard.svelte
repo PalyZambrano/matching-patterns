@@ -5,7 +5,9 @@
 
 	let { store }: { store: Store } = $props();
 
-	let fullAddress = $derived(`${store.address}, ${store.city}, ${store.province} - ${store.country}`);
+	let fullAddress = $derived(
+		`${store.address}, ${store.city}, ${store.province} - ${store.country}`
+	);
 </script>
 
 <a

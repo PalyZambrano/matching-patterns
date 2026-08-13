@@ -26,7 +26,11 @@
 	let filtered = $derived(
 		(data.stores as Store[]).filter((s) => {
 			if (s.category !== activeCategory) return false;
-			if (searchTerm && !`${s.country} ${s.province} ${s.city}`.toLowerCase().includes(searchTerm.toLowerCase())) return false;
+			if (
+				searchTerm &&
+				!`${s.country} ${s.province} ${s.city}`.toLowerCase().includes(searchTerm.toLowerCase())
+			)
+				return false;
 			if (filterPais && !s.country.toLowerCase().includes(filterPais.toLowerCase())) return false;
 			if (filterProvincia && !s.province.toLowerCase().includes(filterProvincia.toLowerCase()))
 				return false;
@@ -62,10 +66,16 @@
 
 <Header variant="light" />
 
-<main class="mx-auto flex min-h-[calc(100vh-108px)] max-w-[1440px] flex-col gap-8 bg-white px-5 pt-12 pb-12 md:px-10 md:pt-18">
+<main
+	class="mx-auto flex min-h-[calc(100vh-108px)] max-w-[1440px] flex-col gap-8 bg-white px-5 pt-12 pb-12 md:px-10 md:pt-18"
+>
 	<section>
-		<h1 class="m-0 text-[clamp(2.4rem,4vw,3.45rem)] leading-none font-black text-black">Explorar Tiendas</h1>
-		<p class="mt-2 mb-5 text-lg text-black/55">Este atlas reúne proveedores recomendados por la comunidad.</p>
+		<h1 class="m-0 text-[clamp(2.4rem,4vw,3.45rem)] leading-none font-black text-black">
+			Explorar Tiendas
+		</h1>
+		<p class="mt-2 mb-5 text-lg text-black/55">
+			Este atlas reúne proveedores recomendados por la comunidad.
+		</p>
 	</section>
 
 	<section class="flex w-full flex-col gap-4">
