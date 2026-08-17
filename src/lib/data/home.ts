@@ -1,4 +1,4 @@
-import type { City, Store } from '$lib/types';
+import type { Store } from '$lib/types';
 
 export const featuredStores: Store[] = [
 	{
@@ -49,15 +49,4 @@ export const featuredStores: Store[] = [
 		category: 'estampados',
 		img: '/test-image.png'
 	}
-];
-
-export const cities: City[] = [
-	{ name: 'Barcelona', storeCount: 42 },
-	{ name: 'London', storeCount: 38 },
-	{ name: 'New York', storeCount: 23 },
-	{ name: 'Paris', storeCount: 17 },
-	{ name: 'Barcelona', storeCount: 16 },
-	{ name: 'London', storeCount: 12 },
-	{ name: 'New York', storeCount: 11 },
-	{ name: 'Paris', storeCount: 9 }
 ];

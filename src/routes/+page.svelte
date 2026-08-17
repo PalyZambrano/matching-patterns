@@ -5,6 +5,9 @@
 	import FeaturedStoresSection from '$lib/components/organisms/FeaturedStoresSection.svelte';
 	import CreatorSelectionSection from '$lib/components/organisms/CreatorSelectionSection.svelte';
 	import CitiesSection from '$lib/components/organisms/CitiesSection.svelte';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <Header />
@@ -12,6 +15,6 @@
 	<Hero />
 	<FeaturedStoresSection />
 	<CreatorSelectionSection />
-	<CitiesSection />
+	<CitiesSection cities={data.cities} />
 </main>
 <Footer />
