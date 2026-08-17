@@ -98,6 +98,25 @@
 					</div>
 				</section>
 			{/if}
+			{#if data.store.contributor}
+				<section>
+					<h2 class="m-0 text-[1.45rem] leading-tight font-black">Contribuidor</h2>
+					<p class="mt-1 mb-0 text-[1.15rem] leading-[1.45] text-black/55">
+						{#if data.store.contributor.url}
+							<a
+								href={data.store.contributor.url}
+								target="_blank"
+								rel="noreferrer"
+								class="text-black/55 no-underline hover:text-brand"
+							>
+								{data.store.contributor.name}
+							</a>
+						{:else}
+							{data.store.contributor.name}
+						{/if}
+					</p>
+				</section>
+			{/if}
 		</div>
 	</section>
 
