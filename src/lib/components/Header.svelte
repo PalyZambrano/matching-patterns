@@ -27,16 +27,6 @@
 			<a href="/stores" class="no-underline {variant === 'blue' ? 'text-white' : 'text-brand'}"
 				>Explorar</a
 			>
-			<a
-				href="#recursos"
-				class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}"
-				>Recursos</a
-			>
-			<a
-				href="#guias"
-				class="hidden no-underline sm:inline {variant === 'blue' ? 'text-white' : 'text-brand'}"
-				>Guías</a
-			>
 			<a href="/contribuir" class="bg-brand-soft px-5 py-2.5 text-white no-underline">Contribuir</a>
 		</nav>
 	</div>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Badge from '$lib/components/atoms/Badge.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
+	import StoreMedia from '$lib/components/molecules/StoreMedia.svelte';
 	import type { Store } from '$lib/types';
 
 	let { store }: { store: Store } = $props();
@@ -15,11 +16,7 @@
 	class="relative flex min-h-[390px] flex-col overflow-visible border border-black/6 bg-white p-3 no-underline transition-shadow hover:shadow-md"
 >
 	<div class="relative">
-		<figure
-			class="aspect-4/3 w-full mask-[url(/image-store.png)] bg-cover bg-center bg-no-repeat mask-no-repeat"
-			style="background-image: url({store.img ?? '/test-image.png'})"
-			aria-label="Foto de la tienda"
-		></figure>
+		<StoreMedia name={store.name} img={store.img} />
 		{#if store.studentDiscount}
 			<div class="absolute -top-6 right-2 z-[1]">
 				<Badge />

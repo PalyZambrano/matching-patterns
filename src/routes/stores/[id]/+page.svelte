@@ -102,10 +102,17 @@
 	</section>
 
 	<section class="pt-2">
-		<div
-			class="aspect-[1.7] w-full bg-cover bg-center"
-			style={`background-image: url(${data.store.img ?? '/test-image.png'})`}
-		></div>
+		{#if data.store.img && data.store.img !== '/test-image.png'}
+			<img
+				src={data.store.img}
+				alt={`Foto de ${data.store.name}`}
+				class="aspect-[1.7] w-full object-cover"
+			/>
+		{:else}
+			<div class="flex aspect-[1.7] w-full items-center justify-center bg-brand-soft px-8 text-center">
+				<p class="m-0 max-w-lg text-2xl leading-tight font-black text-white">{data.store.name}</p>
+			</div>
+		{/if}
 		<h2 class="mt-8 mb-5 text-[1.45rem] font-black text-black">Servicios</h2>
 		<div class="flex flex-wrap gap-3">
 			{#each services as service}<span

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SectionHeading from '$lib/components/molecules/SectionHeading.svelte';
+	import StoreMedia from '$lib/components/molecules/StoreMedia.svelte';
 	import { featuredStores } from '$lib/data/home';
 	let active = $state('All Materials');
 	const filters = ['All Materials', 'Denim', 'Velvet', 'Cotton'];
@@ -25,10 +26,7 @@
 		<div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-14">
 			{#each featuredStores.slice(0, 3) as store}
 				<article>
-					<div
-						class="aspect-[1.35] w-full [mask-image:url('/image-store.png')] bg-cover bg-center [mask-size:100%_100%] [mask-repeat:no-repeat]"
-						style={`background-image:url(${store.img})`}
-					></div>
+					<StoreMedia name={store.name} img={store.img} aspectClass="aspect-[1.35]" />
 					<h3 class="mt-5 mb-1 text-base font-black text-black">{store.name}</h3>
 					<p class="m-0 text-sm text-black">{store.city}, {store.province} - {store.country}</p>
 				</article>

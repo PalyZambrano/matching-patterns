@@ -84,7 +84,7 @@ const stores: Store[] = [
 		tags: ['Textiles', 'Venta por mayor'],
 		studentDiscount: null,
 		category: 'telas',
-		img: '/test-image.png',
+		img: '/img-stores/hitega.jpg',
 		website: null,
 		phone: '+56 2 2583 8800',
 		email: null,
