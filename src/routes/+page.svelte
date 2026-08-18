@@ -13,7 +13,7 @@
 <Header />
 <main>
 	<Hero />
-	<FeaturedStoresSection />
+	<FeaturedStoresSection stores={data.featuredStores} />
 	<CreatorSelectionSection />
 	<CitiesSection cities={data.cities} />
 </main>

@@ -23,7 +23,7 @@
 			<span class="hidden font-display text-[1.7rem] leading-none sm:inline">Matching Patterns</span
 			>
 		</a>
-		<nav class="flex items-center gap-4 text-xs font-bold md:gap-9" aria-label="Main navigation">
+		<nav class="flex items-center gap-4 font-display text-[1.5rem] font-normal  md:gap-9" aria-label="Main navigation">
 			<a href="/stores" class="no-underline {variant === 'blue' ? 'text-white' : 'text-brand'}"
 				>Explorar</a
 			>
