@@ -37,7 +37,7 @@
 </script>
 
 <section id="recursos" class="overflow-hidden bg-brand-pale px-5 py-14 md:px-10 md:py-20">
-	<div class="relative mx-auto flex min-h-[430px] max-w-7xl flex-col items-center justify-center">
+	<div class="relative mx-auto flex min-h-[480px] max-w-7xl flex-col items-center justify-center">
 		{#each features as feature}
 			<div
 				class="absolute hidden w-36 border-t border-brand-soft/50 md:block {feature.lineClass}"

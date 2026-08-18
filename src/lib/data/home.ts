@@ -9,6 +9,7 @@ export const featuredStores: Store[] = [
 		city: 'Alicante',
 		address: 'Carrer Pintor Aparicio, 29',
 		tags: ['Tapicería', 'Venta por mayor'],
+		materials: ['Denim', 'Cotton'],
 		studentDiscount: true,
 		category: 'telas',
 		img: '/test-image.png'
@@ -21,6 +22,7 @@ export const featuredStores: Store[] = [
 		city: 'Barcelona',
 		address: 'Passeig de Gràcia, 42',
 		tags: ['Lino', 'Seda'],
+		materials: ['Velvet', 'Cotton'],
 		studentDiscount: false,
 		category: 'telas',
 		img: '/test-image.png'
@@ -33,6 +35,7 @@ export const featuredStores: Store[] = [
 		city: 'Bilbao',
 		address: 'Calle Licenciado Poza, 14',
 		tags: ['Botones', 'Cremalleras'],
+		materials: ['Denim'],
 		studentDiscount: true,
 		category: 'telas',
 		img: '/test-image.png'
@@ -45,6 +48,7 @@ export const featuredStores: Store[] = [
 		city: 'Valencia',
 		address: 'Polígono Industrial Vara de Quart',
 		tags: ['Serigrafía', 'DTF'],
+		materials: ['Velvet'],
 		studentDiscount: false,
 		category: 'estampados',
 		img: '/test-image.png'

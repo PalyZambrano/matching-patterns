@@ -6,6 +6,7 @@ export interface Store {
 	city: string;
 	address: string;
 	tags: string[];
+	materials?: string[];
 	studentDiscount: boolean | null;
 	category: 'telas' | 'merceria' | 'estampados';
 	img?: string | null;
@@ -33,4 +34,5 @@ export interface SocialLink {
 export interface Contributor {
 	name: string;
 	url?: string | null;
+	urlLabel?: string | null;
 }

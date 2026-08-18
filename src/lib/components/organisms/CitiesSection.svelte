@@ -12,7 +12,6 @@
 			centered
 			eyebrow="La comunidad se cose localmente"
 			title="Explora por ciudad"
-			description="Descubre las tiendas y recursos que tienes más cerca."
 		/>
 		<div class="mt-12"><CityGrid {cities} /></div>
 	</div>

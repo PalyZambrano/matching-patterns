@@ -29,7 +29,8 @@ const stores: Store[] = [
 		],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: 'https://palyzambrano.com',
+			urlLabel: 'palyzambrano.com'
 		}
 	},
 	{
@@ -50,7 +51,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:30-16:00', 'Sábado: 09:30-14:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -71,7 +73,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-19:00', 'Sábado: 10:00-14:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -92,7 +95,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Jueves: 09:00-17:00', 'Viernes: 09:00-15:30', 'Sábado-Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: 'https://palyzambrano.com',
+			urlLabel: 'palyzambrano.com'
 		}
 	},
 	{
@@ -113,7 +117,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:30-20:00', 'Sábado: 10:30-17:30', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -139,7 +144,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Jueves: 09:30-16:30', 'Viernes: 09:30-14:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -160,7 +166,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -181,7 +188,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-18:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -202,7 +210,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-16:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -223,7 +232,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -249,7 +259,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-14:00 / 16:30-20:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -270,7 +281,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:30-13:30 / 17:30-20:30', 'Sábado: 09:30-13:30', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -291,7 +303,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Jueves: 09:00-13:30 / 16:30-20:00', 'Viernes: 09:00-13:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -312,7 +325,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-13:30', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -333,7 +347,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -359,7 +374,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:15-14:00 / 16:30-20:00', 'Sábado: 10:15-14:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -380,7 +396,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-14:00 / 16:30-20:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -401,7 +418,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -422,7 +440,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -443,7 +462,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-14:00 / 17:00-20:00', 'Sábado: 10:00-14:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -469,7 +489,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-14:00 / 16:00-20:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -490,7 +511,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -511,7 +533,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-20:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -532,7 +555,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-14:00 / 16:00-20:00', 'Sábado: 10:00-14:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -553,7 +577,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -579,7 +604,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-18:00', 'Sábado: 09:00-13:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -600,7 +626,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-18:00', 'Sábado: 09:00-13:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -621,7 +648,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-18:00', 'Sábado: 09:00-13:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -642,7 +670,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-18:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -663,7 +692,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:30-17:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -689,7 +719,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-18:00', 'Sábado: 10:00-13:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -710,7 +741,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:00-18:00', 'Sábado: 10:00-15:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -731,7 +763,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-19:00', 'Sábado: 10:00-14:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -752,7 +785,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 10:30-18:30', 'Sábado: 10:00-15:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -773,7 +807,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 11:00-18:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -799,7 +834,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-19:30', 'Sábado: 09:00-13:00 / 15:30-19:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -820,7 +856,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -841,7 +878,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -862,7 +900,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 09:30-13:00 / 16:00-20:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -883,7 +922,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-13:00 / 16:30-19:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -909,7 +949,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -935,7 +976,8 @@ const stores: Store[] = [
 		],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -956,7 +998,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -977,7 +1020,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:30-18:00', 'Sábado: 11:00-17:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -998,7 +1042,8 @@ const stores: Store[] = [
 		hours: ['Lunes: 12:00-19:00', 'Martes-Viernes: 10:00-19:00', 'Sábado: 10:00-17:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 
@@ -1024,7 +1069,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:30-18:00', 'Sábado: 09:30-16:00', 'Domingo: Cerrado'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -1045,7 +1091,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Viernes: 09:00-17:00', 'Sábado: 10:00-17:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -1066,7 +1113,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 10:00-18:30'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -1087,7 +1135,8 @@ const stores: Store[] = [
 		hours: ['Lunes-Sábado: 07:00-18:00'],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	},
 	{
@@ -1108,7 +1157,8 @@ const stores: Store[] = [
 		hours: [],
 		contributor: {
 			name: 'Matching Patterns',
-			url: null
+			url: null,
+			urlLabel: null
 		}
 	}
 ];
