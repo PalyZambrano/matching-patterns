@@ -6,8 +6,9 @@ export interface Store {
 	city: string;
 	address: string;
 	tags: string[];
+	services?: string[];
 	studentDiscount: boolean | null;
-	category: 'telas' | 'merceria' | 'estampados';
+	categories: Category[];
 	img?: string | null;
 	mapUrl?: string | null;
 	website?: string | null;

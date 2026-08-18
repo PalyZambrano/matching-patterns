@@ -26,7 +26,7 @@
 
 	let filtered = $derived(
 		(data.stores as Store[]).filter((s) => {
-			if (s.category !== activeCategory) return false;
+			if (!s.categories.includes(activeCategory)) return false;
 			if (
 				searchTerm &&
 				!includesNormalized(`${s.country} ${s.province} ${s.city}`, searchTerm)
@@ -73,7 +73,7 @@
 		<h1 class="m-0 text-[clamp(1.9rem,3vw,2.5rem)] leading-tight font-black text-black">
 			Explorar Tiendas
 		</h1>
-		<p class="mt-2 mb-5 text-base    text-black/55">
+		<p class="mt-2 mb-2 text-base  text-black/55">
 			Este atlas reúne proveedores recomendados por la comunidad.
 		</p>
 	</section>

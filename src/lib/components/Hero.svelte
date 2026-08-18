@@ -70,12 +70,12 @@
 		</p>
 		<div class="mt-7 flex flex-wrap gap-4">
 			<a
-				class="relative block h-20 w-56 bg-white [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-brand-soft no-underline"
+				class="relative block h-20 w-56 bg-white [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-brand no-underline"
 				href="#tiendas"
 				><span class="absolute inset-x-0 bottom-3 text-center">⟵　Explorar　⟶</span></a
 			>
 			<a
-				class="relative block h-20 w-56 bg-brand/35 [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline"
+				class="relative block h-20 w-56 bg-brand [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline"
 				href="#ciudades"
 				><span class="absolute inset-x-0 bottom-3 text-center">⟵　Ciudades　⟶</span></a
 			>

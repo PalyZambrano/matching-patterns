@@ -7,8 +7,6 @@
 
 	let { data }: { data: PageData } = $props();
 
-	const services = ['Clases', 'Workshops'];
-
 	let displayName = $derived(data.store.name.replace(' Tejidos', ''));
 	let addressQuery = $derived(
 		`${data.store.name}, ${data.store.address}, ${data.store.city}, ${data.store.province}, ${data.store.country}`
@@ -19,6 +17,7 @@
 	);
 	let hasPhoto = $derived(Boolean(data.store.img && data.store.img !== '/test-image.png'));
 	let contactLines = $derived([data.store.phone, data.store.email].filter(Boolean));
+	let services = $derived(data.store.services ?? []);
 	let contributorText = $derived(
 		data.store.contributor?.urlLabel
 			? `${data.store.contributor.name}  |  ${data.store.contributor.urlLabel}`
@@ -52,32 +51,29 @@
 
 <Header variant="light" />
 
-<main class="relative overflow-hidden bg-white px-5 py-14 md:px-10 md:py-20">
+<main class="relative overflow-hidden bg-white px-5 py-14 md:px-10 md:py-10">
 	<div class="relative mx-auto max-w-[1440px]">
 		<div
 			class="pointer-events-none absolute inset-0 hidden -rotate-2 border border-black/15 bg-paper md:block"
 		></div>
-		<section class="relative border border-black/15 bg-white p-5 md:p-8 lg:p-10">
+		<section class="relative border border-black/15 bg-white p-5 md:p-4 lg:p-4">
+		<h1 class="my-4 ml-2 text-base leading-tight font-black text-black  md:text-base">FICHA TÉCNICA</h1>
 		<div class="border border-black/20 px-5 py-10 lg:hidden">
 			{@render storePhoto()}
 		</div>
-
 		<div class="grid border border-black/20 lg:grid-cols-[1.05fr_0.95fr]">
 			<div class="border-black/20 lg:border-r">
-				<div class="border-b border-black/20 px-5 py-6 md:px-8">
-					<h1 class="m-0 text-xl leading-tight font-black text-black md:text-2xl">FICHA TÉCNICA</h1>
-				</div>
 
-				<div class="border-b border-black/20 px-5 py-8 md:px-8 md:py-4">
-					<p class="m-0 text-lg text-black/40">Tienda</p>
-					<h2 class="mt-4 mb-0 text-4xl leading-none font-light  text-black">
+				<div class="border-b border-black/20 px-4 py-2">
+					<p class="text-base text-black/40">Tienda</p>
+					<h2 class="pt-2 mb-4 text-2xl leading-none font-light text-black">
 						{displayName}
 					</h2>
 				</div>
 
-				<div class="border-b border-black/20 px-5 py-4 md:px-8">
-					<h3 class="m-0 text-lg text-black/40">Características</h3>
-					<div class="mt-5 flex flex-wrap gap-3">
+				<div class="border-b border-black/20 px-4 py-2">
+					<h3 class="text-base text-black/40">Características</h3>
+					<div class="mt-2  mb-4 flex flex-wrap gap-3">
 						{#each data.store.tags.slice(0, 3) as tag}
 							<Tag label={tag} />
 						{/each}
@@ -85,20 +81,20 @@
 				</div>
 
 				<div class="grid border-b border-black/20 md:grid-cols-2">
-					<div class="border-black/20 px-5 py-4 md:border-r md:px-8">
-						<h3 class="m-0 text-lg text-black/40">Horario</h3>
+					<div class="border-black/20 px-4 pt-2 pb-8 md:border-r ">
+						<h3 class="m-0 pb-2 text-base text-black/40">Horario</h3>
 						{#if data.store.hours?.length}
-							<p class="mt-4 mb-0 text-xl leading-relaxed whitespace-pre-line text-black/80">
+							<p class="text-base leading-relaxed whitespace-pre-line text-black/80">
 								{data.store.hours.join('\n')}
 							</p>
 						{:else}
-							<p class="mt-4 mb-0 text-xl leading-relaxed text-black/80">Horario por confirmar.</p>
+							<p class="mb-0 text-base leading-relaxed text-black/80">Horario por confirmar.</p>
 						{/if}
 					</div>
-					<div class="border-t border-black/20 px-5 py-4 md:border-t-0 md:px-8">
-						<h3 class="m-0 text-lg text-black/40">Contacto</h3>
+					<div class="border-t border-black/20 px-4 pt-2 pb-8 md:border-t-0">
+						<h3 class="m-0 text-base pb-2 text-black/40">Contacto</h3>
 						{#if contactLines.length}
-							<p class="mt-4 mb-0 text-xl leading-relaxed text-black/80">
+							<p class="mb-0 text-base leading-relaxed text-black/80">
 								{#if data.store.phone}{data.store.phone}{/if}
 								{#if data.store.phone && data.store.email}<br />{/if}
 								{#if data.store.email}
@@ -111,43 +107,32 @@
 								{/if}
 							</p>
 						{:else}
-							<p class="mt-4 mb-0 text-xl leading-relaxed text-black/80">Contacto por confirmar.</p>
+							<p class="mb-0 text-lg leading-relaxed text-black/80">Contacto por confirmar.</p>
 						{/if}
 					</div>
 				</div>
 
-				<div class="grid items-center border-b border-black/20 px-5 py-4 md:grid-cols-[12rem_1fr] md:px-8">
-					<h3 class="m-0 text-lg text-black/40">Dirección</h3>
+				<div class="grid items-center border-b border-black/20 px-4 py-4 md:grid-cols-[12rem_1fr]">
+					<h3 class="m-0 text-base text-black/40">Dirección</h3>
 					<a
 						href={mapsUrl}
 						target="_blank"
 						rel="noreferrer"
-						class="mt-4 text-xl leading-relaxed text-black/80 no-underline hover:text-brand md:mt-0"
+						class="text-base leading-relaxed text-black/80 no-underline hover:text-brand md:mt-0"
 					>
 						{data.store.address}<br />{data.store.city}, {data.store.province} - {data.store.country}
 					</a>
 				</div>
 
-				<div class="grid min-h-40 items-center px-5 py-4 md:grid-cols-[12rem_1fr] md:px-8">
-					<h3 class="m-0 text-lg text-black/40">Contribuidor</h3>
-					{#if data.store.contributor && contributorText}
-						{#if data.store.contributor.url}
-							<a
-								href={data.store.contributor.url}
-								target="_blank"
-								rel="noreferrer"
-								class="mt-5 inline-block w-fit -rotate-3 bg-brand-soft px-12 py-6 text-xl text-black no-underline hover:bg-brand hover:text-white md:mt-0"
-							>
-								{contributorText}
-							</a>
-						{:else}
-							<p class="mt-5 mb-0 inline-block w-fit -rotate-3 bg-brand-soft px-12 py-6 text-xl text-black md:mt-0">
-								{contributorText}
-							</p>
-						{/if}
-					{:else}
-						<p class="mt-5 mb-0 text-xl text-black/45 md:mt-0">Sin contribuidor asignado.</p>
-					{/if}
+				<div class="grid items-center gap-3 px-4 py-4 md:grid-cols-[12rem_1fr] md:py-3">
+					<h3 class="m-0 text-base text-black/40">Servicios</h3>
+					<div class="flex flex-wrap gap-3">
+						{#each services as service}
+							<span class="rounded-full border border-black px-8 py-2 text-sm font-black shadow-md">
+								{service}
+							</span>
+						{/each}
+					</div>
 				</div>
 			</div>
 
@@ -158,28 +143,50 @@
 					</div>
 				</div>
 
-				<div class="px-5 py-4 md:px-8">
-					<h3 class="m-0 text-lg text-black/40">Servicios</h3>
-					<div class="mt-7 flex flex-wrap gap-4">
-						{#each services as service}
-							<span class="rounded-full border border-black px-14 py-2 text-base font-black shadow-md">
-								{service}
-							</span>
-						{/each}
-					</div>
+				<div class="px-4 py-4">
+					<h3 class="m-0 text-base text-black/40">Contribuidor</h3>
+					{#if data.store.contributor && contributorText}
+						{#if data.store.contributor.url}
+							<a
+								href={data.store.contributor.url}
+								target="_blank"
+								rel="noreferrer"
+								class="mt-5 ml-4 inline-block w-fit max-w-full -rotate-2 bg-brand-soft px-6 py-3 text-base leading-tight text-black no-underline hover:bg-brand hover:text-white md:px-8 md:py-4"
+							>
+								{contributorText}
+							</a>
+						{:else}
+							<p class="mt-5 mb-0 inline-block w-fit max-w-full -rotate-2 bg-brand-soft px-6 py-3 text-base leading-tight text-black md:px-8 md:py-4">
+								{contributorText}
+							</p>
+						{/if}
+					{:else}
+						<p class="mt-5 mb-0 text-base text-black/45">Sin contribuidor asignado.</p>
+					{/if}
 				</div>
 			</div>
 		</div>
 
-		<div class="border-x border-b border-black/20 px-5 py-4 md:px-8 lg:hidden">
-			<h3 class="m-0 text-lg text-black/40">Servicios</h3>
-			<div class="mt-7 flex flex-wrap gap-4">
-				{#each services as service}
-					<span class="rounded-full border border-black px-14 py-2 text-base font-black shadow-md">
-						{service}
-					</span>
-				{/each}
-			</div>
+		<div class="border-x border-b border-black/20 px-4 py-4 lg:hidden">
+			<h3 class="m-0 text-base text-black/40">Contribuidor</h3>
+			{#if data.store.contributor && contributorText}
+				{#if data.store.contributor.url}
+					<a
+						href={data.store.contributor.url}
+						target="_blank"
+						rel="noreferrer"
+						class="mt-5 inline-block w-fit max-w-full -rotate-2 bg-brand-soft px-6 py-3 text-base leading-tight text-black no-underline hover:bg-brand hover:text-white"
+					>
+						{contributorText}
+					</a>
+				{:else}
+					<p class="mt-5 mb-0 inline-block w-fit max-w-full -rotate-2 bg-brand-soft px-6 py-3 text-base leading-tight text-black">
+						{contributorText}
+					</p>
+				{/if}
+			{:else}
+				<p class="mt-5 mb-0 text-base text-black/45">Sin contribuidor asignado.</p>
+			{/if}
 		</div>
 		</section>
 	</div>

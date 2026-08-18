@@ -52,7 +52,7 @@
 		{/each}
 		<div class="relative flex max-w-xl flex-col content-center items-center text-center">
 			<p
-				class="mb-5 rounded-full border bg-brand-soft px-3 py-1.5 text-center text-xs font-bold tracking-[0.16em] text-white"
+				class="mb-5 rounded-full border bg-brand px-3 py-1.5 text-center text-xs font-bold tracking-[0.16em] text-white"
 			>
 				SELECCIÓN PARA CREADORES
 			</p>
@@ -67,7 +67,7 @@
 			</p>
 			<a
 				href="#contribuir"
-				class="relative mt-8 block h-20 w-56 bg-brand-soft [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline"
+				class="relative mt-8 block h-20 w-56 bg-brand [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline"
 				><span class="absolute inset-x-0 bottom-3 text-center">⟵　Contribuir　⟶</span></a
 			>
 		</div>
