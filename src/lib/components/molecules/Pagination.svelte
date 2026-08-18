@@ -12,7 +12,7 @@
 	} = $props();
 </script>
 
-<nav class="flex justify-center" aria-label="Paginación">
+<nav class="flex justify-center mt-4" aria-label="Paginación">
 	<div
 		class="inline-flex items-center gap-[0.6rem] rounded-full border-[1.5px] border-brand px-4 py-[0.35rem]"
 	>

@@ -42,6 +42,7 @@
 	let totalPages = $derived(Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)));
 
 	let paginated = $derived(filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE));
+	let searchedLabel = $derived(searchTerm.trim() || filterCiudad.trim());
 
 	function setCategory(cat: Category) {
 		activeCategory = cat;
@@ -67,23 +68,28 @@
 <Header variant="light" />
 
 <main
-	class="mx-auto flex min-h-[calc(100vh-108px)] max-w-[1440px] flex-col gap-8 bg-white px-5 pt-12 pb-12 md:px-10 md:pt-18"
+	class="mx-auto flex min-h-[calc(100vh-108px)] max-w-[1440px] flex-col gap-4 bg-white px-5 pt-12 pb-12 md:px-10 md:pt-18"
 >
 	<section>
 		<h1 class="m-0 text-[clamp(1.9rem,3vw,2.5rem)] leading-tight font-black text-black">
 			Explorar Tiendas
 		</h1>
-		<p class="mt-2 mb-2 text-base  text-black/55">
+		<p class="mt-2 text-base  text-black/55">
 			Este atlas reúne proveedores recomendados por la comunidad.
 		</p>
 	</section>
 
-	<section class="flex w-full flex-col gap-4">
+	<section class="flex w-full flex-col gap-2">
 		<SearchBar onsearch={handleSearch} />
 		<CategoryFilter active={activeCategory} onchange={setCategory} />
 	</section>
 
 	<section class="flex-1 pt-16 md:pt-20">
+		{#if searchedLabel}
+			<p class="mb-6 text-base font-normal text-black/50">
+				Buscaste: <span class="text-brand">{searchedLabel}</span>
+			</p>
+		{/if}
 		<StoreGrid stores={paginated} />
 	</section>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import CategoryBadge from '$lib/components/atoms/CategoryBadge.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 	import StoreCard from '$lib/components/molecules/StoreCard.svelte';
 	import type { PageData } from './$types';
@@ -23,6 +24,11 @@
 			? `${data.store.contributor.name}  |  ${data.store.contributor.urlLabel}`
 			: data.store.contributor?.name
 	);
+	const categoryLabels = {
+		telas: 'Telas',
+		merceria: 'Mercería',
+		estampados: 'Estampados'
+	};
 </script>
 
 {#snippet storePhoto()}
@@ -69,6 +75,15 @@
 					<h2 class="pt-2 mb-4 text-2xl leading-none font-light text-black">
 						{displayName}
 					</h2>
+				</div>
+
+				<div class="border-b border-black/20 px-4 py-2">
+					<h3 class="text-base text-black/40">Categoría</h3>
+					<div class="mt-2 mb-4 flex flex-wrap gap-3">
+						{#each data.store.categories as category}
+							<CategoryBadge label={categoryLabels[category]} {category} />
+						{/each}
+					</div>
 				</div>
 
 				<div class="border-b border-black/20 px-4 py-2">
@@ -126,13 +141,19 @@
 
 				<div class="grid items-center gap-3 px-4 py-4 md:grid-cols-[12rem_1fr] md:py-3">
 					<h3 class="m-0 text-base text-black/40">Servicios</h3>
-					<div class="flex flex-wrap gap-3">
-						{#each services as service}
-							<span class="rounded-full border border-black px-8 py-2 text-sm font-black shadow-md">
-								{service}
-							</span>
-						{/each}
-					</div>
+					{#if services.length}
+						<div class="flex flex-wrap gap-3">
+							{#each services as service}
+								<span class="rounded-full border border-black px-8 py-2 text-sm font-black shadow-md">
+									{service}
+								</span>
+							{/each}
+						</div>
+					{:else}
+						<p class="m-0 text-base leading-relaxed text-black/45">
+							Información de servicios por confirmar.
+						</p>
+					{/if}
 				</div>
 			</div>
 

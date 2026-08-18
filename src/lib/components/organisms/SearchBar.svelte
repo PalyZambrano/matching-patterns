@@ -16,7 +16,7 @@
 </script>
 
 <form
-	class="flex w-full md:max-w-[820px] flex-col gap-2 md:flex-row md:items-center md:gap-6"
+	class="flex w-full md:max-w-[820px] flex-col gap-2 md:flex-row md:items-center"
 	onsubmit={(e) => {
 		e.preventDefault();
 		handleSearch();

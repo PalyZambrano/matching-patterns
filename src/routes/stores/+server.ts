@@ -260,7 +260,7 @@ const stores: Store[] = [
 		address: 'C. General Lacy, 10, 03003 Alicante',
 		tags: ['Telas', 'Mercería', 'Confección', 'Fiesta', 'Decoración'],
 		services: [],
-		studentDiscount: null,
+		studentDiscount: true,
 		categories: ['telas', 'merceria'],
 		img: '/test-image.png',
 		website: 'https://julianlopez.es',
