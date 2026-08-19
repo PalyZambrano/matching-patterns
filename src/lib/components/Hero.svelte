@@ -53,7 +53,7 @@
 			class="hero-illustration pointer-events-none absolute hidden brightness-0 invert md:block {illustration.class}"
 		/>
 	{/each}
-	<div class="relative z-10 mx-auto flex max-w-[1280px] flex-col items-start text-left">
+	<div class="relative z-10 mx-auto flex max-w-[1280px] flex-col items-center text-center md:items-start md:text-left">
 		<p
 			class="mb-5 rounded-full border border-white/70 px-3 py-1.5 text-xs font-bold tracking-[0.16em]"
 		>
@@ -68,14 +68,14 @@
 			Explora tiendas de telas selectas en ciudades de todo el mundo. Conecta con artesanos,
 			descubre materiales únicos y da vida a tu visión creativa.
 		</p>
-		<div class="mt-7 flex flex-wrap gap-4">
+		<div class="mt-7 flex w-full flex-wrap justify-center gap-4 md:w-auto md:justify-start">
 			<a
-				class="relative block h-20 w-56 bg-white [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-brand no-underline"
+				class="relative block h-20 w-full bg-white [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-brand no-underline md:w-56"
 				href="#tiendas"
 				><span class="absolute inset-x-0 bottom-3 text-center">⟵　Explorar　⟶</span></a
 			>
 			<a
-				class="relative block h-20 w-56 bg-brand [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline"
+				class="relative block h-20 w-full bg-brand [mask-image:url('/svg/bttn-manga.svg')] [mask-size:100%_100%] [mask-position:center] [mask-repeat:no-repeat] text-sm font-bold text-white no-underline md:w-56"
 				href="#ciudades"
 				><span class="absolute inset-x-0 bottom-3 text-center">⟵　Ciudades　⟶</span></a
 			>

@@ -27,7 +27,7 @@
 	const categoryLabels = {
 		telas: 'Telas',
 		merceria: 'Mercería',
-		estampacion: 'Estampación'
+		estampados: 'Estampados'
 	};
 </script>
 

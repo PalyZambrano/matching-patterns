@@ -261,7 +261,7 @@ const stores: Store[] = [
 		tags: ['Telas', 'Mercería', 'Confección', 'Fiesta', 'Decoración'],
 		services: [],
 		studentDiscount: true,
-		categories: ['telas', 'merceria', 'estampacion'],
+		categories: ['telas', 'merceria', 'estampados'],
 		img: '/test-image.png',
 		website: 'https://julianlopez.es',
 		phone: '+34 965 985 189',

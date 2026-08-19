@@ -6,7 +6,7 @@
 	const categoryClasses: Record<Category, string> = {
 		telas: 'bg-brand-soft/70 text-[#173B64]',
 		merceria: 'bg-[#173B64] text-brand-soft',
-		estampacion: 'bg-[#FFDE7070] text-brand'
+		estampados: 'bg-[#FFDE7070] text-brand'
 	};
 </script>
 

@@ -19,7 +19,7 @@ export interface Store {
 	contributor?: Contributor | null;
 }
 
-export type Category = 'telas' | 'merceria' | 'estampacion';
+export type Category = 'telas' | 'merceria' | 'estampados';
 
 export interface City {
 	name: string;
