@@ -4,14 +4,14 @@
 	let { label, category }: { label: string; category: Category } = $props();
 
 	const categoryClasses: Record<Category, string> = {
-		telas: 'border-brand-soft bg-brand-soft text-white',
-		merceria: 'border-[#5278dc] bg-[#5278dc] text-white',
-		estampados: 'border-[#d84a6f] bg-[#d84a6f] text-white'
+		telas: 'bg-brand-soft/70 text-[#173B64]',
+		merceria: 'bg-[#173B64] text-brand-soft',
+		estampacion: 'bg-[#FFDE7070] text-brand'
 	};
 </script>
 
 <span
-	class="inline-flex min-h-7 items-center border px-3.5 py-1 text-[0.78rem] leading-none font-black whitespace-nowrap uppercase {categoryClasses[
+	class="rounded-full items-center px-4 py-2  text-[0.70rem] font-bold uppercase {categoryClasses[
 		category
 	]}"
 >

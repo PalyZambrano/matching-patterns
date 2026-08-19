@@ -27,7 +27,7 @@
 	const categoryLabels = {
 		telas: 'Telas',
 		merceria: 'Mercería',
-		estampados: 'Estampados'
+		estampacion: 'Estampación'
 	};
 </script>
 
@@ -144,7 +144,7 @@
 					{#if services.length}
 						<div class="flex flex-wrap gap-3">
 							{#each services as service}
-								<span class="rounded-full border border-black px-8 py-2 text-sm font-black shadow-md">
+								<span class="rounded-full border border-black px-3 py-2 text-[0.70rem] font-bold uppercase ">
 									{service}
 								</span>
 							{/each}

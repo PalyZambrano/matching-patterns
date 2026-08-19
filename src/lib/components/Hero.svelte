@@ -43,7 +43,7 @@
 </script>
 
 <section
-	class="relative isolate overflow-hidden bg-brand-soft px-5 py-14 text-white md:min-h-[500px] md:px-10 md:py-16"
+	class="relative isolate overflow-hidden bg-gradient-to-b from-brand/90 to-brand-soft px-5 py-14 text-white md:min-h-[500px] md:px-10 md:py-16"
 >
 	{#each illustrations as illustration}
 		<img
